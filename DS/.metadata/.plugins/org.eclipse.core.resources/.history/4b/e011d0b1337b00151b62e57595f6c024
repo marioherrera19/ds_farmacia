@@ -1,0 +1,39 @@
+package modelo;
+
+
+import org.junit.Before;
+import org.junit.Test;
+
+import static org.mockito.Mockito.mock;
+
+import java.sql.Connection;
+
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.*;
+
+public class ConexionTest{
+	
+	Conexion conexion;
+	Connection mockCon;
+	Connection con;
+	@Before
+	public void setUp(){
+		Connection mockCon = mock(Connection.class);
+	}
+	
+	@Test
+	public void getConexion(){
+		
+		when(conexion.getConexion()).thenReturn(mockCon);
+		con = conexion.getConexion();
+		assertEquals(con, mockCon);
+		
+	}
+	
+	@Test
+	public void cerrarConexionTest(){
+		conexion.cerrarConexion();
+		verify(conexion).cerrarConexion();
+		
+	}
+}

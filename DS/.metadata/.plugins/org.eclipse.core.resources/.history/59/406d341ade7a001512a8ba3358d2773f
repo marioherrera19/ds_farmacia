@@ -1,0 +1,58 @@
+package controlador;
+
+public class BeanUsuario {
+	 
+	 private String iD;
+	 private String descripcion;
+	 private String precio;
+	 private String cantidad;
+	 private String iVA;
+	 private String fechaCaducicad;
+	 
+	 public String getiD() {
+	  return iD;
+	 }
+	 public void setiD(String id) {
+	  this.iD = id;
+	 }
+	 public String getDescripcion() {
+	  return descripcion;
+	 }
+	 public void setDescripcion(String descripcion) {
+	  this.descripcion = descripcion;
+	 }
+	 public String getPrecio() {
+	  return precio;
+	 }
+	 public void setPrecio(String precio) {
+	  this.precio = precio;
+	 }
+	 public String getCantidad() {
+	  return cantidad;
+	 }
+	 public void setCantidad(String cantidad) {
+	  this.cantidad = cantidad;
+	 }
+	 public String getUsuario() {
+	  return iVA;
+	 }
+	 public void setUsuario(String iva) {
+	  this.iVA = iva;
+	 }
+	 public String getClave() {
+	  return fechaCaducicad;
+	 }
+	 public void setClave(String clave) {
+	  this.fechaCaducicad = clave;
+	 }
+	 public BeanUsuario(String id, String descripcion, String edad,
+	   String correo, String usuario, String clave) {
+	  super();
+	  this.iD = id;
+	  this.descripcion = descripcion;
+	  this.precio = edad;
+	  this.cantidad = correo;
+	  this.iVA = usuario;
+	  this.fechaCaducicad = clave;
+	 }
+	}

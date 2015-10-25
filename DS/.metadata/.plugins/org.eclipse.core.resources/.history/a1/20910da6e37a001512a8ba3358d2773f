@@ -1,0 +1,36 @@
+package modelo;
+
+import org.junit.Before;
+import org.junit.Test;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
+import java.sql.Connection;
+
+import static org.mockito.Mockito.*;
+
+public class ConexionTest {
+	
+	Conexion conexion;
+	private Connection con;
+	
+	@Before
+	public void setUp(){
+		conexion = mock(Conexion.class);
+		con = null;
+	}
+	
+	public void ConectarTest(){
+		
+		
+	}
+	
+	public void getConexionTest(){
+		
+		when(conexion.getConexion()).thenReturn(con);
+		
+		
+	}
+	
+
+}

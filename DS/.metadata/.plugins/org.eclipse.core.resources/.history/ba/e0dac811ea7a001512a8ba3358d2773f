@@ -1,0 +1,26 @@
+package modelo;
+
+
+import org.junit.Before;
+import static org.mockito.Mockito.mock;
+
+import static org.mockito.Mockito.*;
+
+public class ConexionTest {
+	
+	Conexion conexion;
+	public String connectionURL;
+	
+	@Before
+	public void setUp(){
+		conexion = mock(Conexion.class);
+		connectionURL = "jdbc:sqlserver://localhost;databaseName=FarmaciaWeb;user=sa;password=sa;";
+		
+	}
+	public void cerrarConexionTest(){
+		
+		conexion.cerrarConexion();
+		verify(conexion).cerrarConexion();
+		
+	}
+}

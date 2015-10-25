@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BeanUsuarioTest" project="FarmaciaJava" tests="12" started="12" failures="0" errors="0" ignored="0">
+  <testsuite name="controlador.BeanUsuarioTest" time="0.149">
+    <testcase name="setiDTest" classname="controlador.BeanUsuarioTest" time="0.138"/>
+    <testcase name="getiDTest" classname="controlador.BeanUsuarioTest" time="0.007"/>
+    <testcase name="setPrecioTest" classname="controlador.BeanUsuarioTest" time="0.0"/>
+    <testcase name="getPrecioTest" classname="controlador.BeanUsuarioTest" time="0.001"/>
+    <testcase name="setCantidadTest" classname="controlador.BeanUsuarioTest" time="0.0"/>
+    <testcase name="getCantidadTest" classname="controlador.BeanUsuarioTest" time="0.0"/>
+    <testcase name="setIvaTest" classname="controlador.BeanUsuarioTest" time="0.001"/>
+    <testcase name="getIvaTest" classname="controlador.BeanUsuarioTest" time="0.0"/>
+    <testcase name="setDescripcionTest" classname="controlador.BeanUsuarioTest" time="0.001"/>
+    <testcase name="getDescripcionTest" classname="controlador.BeanUsuarioTest" time="0.0"/>
+    <testcase name="setFechaCaducidadTest" classname="controlador.BeanUsuarioTest" time="0.0"/>
+    <testcase name="getFechaCaducidadTest" classname="controlador.BeanUsuarioTest" time="0.001"/>
+  </testsuite>
+</testrun>

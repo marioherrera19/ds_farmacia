@@ -1,0 +1,14 @@
+package vista;
+
+import javax.servlet.http.HttpServletRequest;
+import org.junit.Before;
+import org.junit.Test;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.*;
+
+public class ServletRegistroTest {
+	
+	HttpServletRequest request = mock(HttpServletRequest.class);       
+    HttpServletResponse response = mock(HttpServletResponse.class);    
+
+}

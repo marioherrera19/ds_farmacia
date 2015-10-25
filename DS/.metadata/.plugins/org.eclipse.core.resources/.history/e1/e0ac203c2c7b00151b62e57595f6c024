@@ -1,0 +1,33 @@
+package modelo;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+import static org.mockito.Mockito.mock;
+import org.junit.Before;
+import org.junit.Test;
+
+import controlador.BeanUsuario;
+
+import static org.mockito.Mockito.*;
+
+public class UsuarioTest {
+	
+	Usuario usuario;
+	Connection con;
+	String update;
+	BeanUsuario bean;
+	
+	@Before
+	public void setUp(){
+		usuario = mock(Usuario.class);
+	}
+	
+	@SuppressWarnings("static-access")
+	@Test
+	public void agregarProductoTest() throws SQLException{
+		 usuario.agregarProducto(bean);
+		 verify(usuario).agregarProducto(bean);
+	}
+
+}

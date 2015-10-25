@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configMode="1" hostname="127.0.0.1" id="defaultServer0" id-set="true" name="Web Preview Server" runtime-id="Web Preview Server Runtime" server-type="com.ibm.etools.wdt.server.serverType" server-type-id="com.ibm.etools.wdt.server.serverType" serverName="defaultServer0" start-timeout="30" stop-timeout="15" timestamp="2">
+    <list key="modules"/>
+  </server>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v7.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v7.0 Server at localhost" name="Tomcat v7.0 Server at localhost" runtime-id="Apache Tomcat v7.0" server-type="org.eclipse.jst.server.tomcat.70" server-type-id="org.eclipse.jst.server.tomcat.70" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="2">
+    <list key="modules" value0="FarmaciaJava::org.eclipse.jst.j2ee.server:FarmaciaJava::jst.web::2.4"/>
+  </server>
+  <server auto-publish-setting="2" auto-publish-time="1" hostname="localhost" id="WebSphere Application Server Liberty Profile at localhost" looseConfig="true" name="WebSphere Application Server Liberty Profile at localhost" runtime-id="WebSphere Application Server Liberty Profile" server-type="com.ibm.ws.st.server.wlp" server-type-id="com.ibm.ws.st.server.wlp" serverName="defaultServer" start-timeout="60" stop-timeout="15" timestamp="1">
+    <list key="modules" value0="FarmaciaJava::org.eclipse.jst.j2ee.server:FarmaciaJava::jst.web::2.4" value1="FarmaciaJavaEAR::org.eclipse.jst.j2ee.server:FarmaciaJavaEAR::jst.ear::1.4"/>
+  </server>
+</servers>

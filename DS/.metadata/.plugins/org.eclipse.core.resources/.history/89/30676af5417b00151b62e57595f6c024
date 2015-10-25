@@ -1,0 +1,53 @@
+package controlador;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Before;
+import org.junit.Test;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
+
+public class BeanUsuarioTest {
+	
+	 BeanUsuario bean;
+	 private String iD;
+	 
+	 @Before
+	 public void setUp(){
+		 bean = mock(BeanUsuario.class);
+		 iD = "0";
+		 
+	 }
+	 
+	 //Test para el iD del producto
+	 @Test
+	 public void setiDTest(){
+		 bean.setiD("10");
+		 verify(bean).setiD("10");
+	 }
+	 	
+	 @Test
+	 public void getiDTest(){
+		when(bean.getiD()).thenReturn("14");
+		 iD = bean.getiD();
+		 assertEquals(iD,"14");
+		 
+	 }
+	 
+	 //Test para la descripcion del producto
+	 @Test
+	 public void setDescripcionTest(){
+		 bean.setDescripcion("Paracetamol");
+		 verify(bean).setDescripcion("Paracetamol");
+	 }
+	 	
+	 @Test
+	 public void getDescripcionTest(){
+		when(bean.getiD()).thenReturn("14");
+		 iD = bean.getiD();
+		 assertEquals(iD,"14");
+		 
+	 }
+
+}

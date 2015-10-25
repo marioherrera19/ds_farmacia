@@ -1,0 +1,73 @@
+package controlador;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Before;
+import org.junit.Test;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
+
+public class BeanUsuarioTest {
+	
+	 BeanUsuario bean;
+	 private String iD, descripcion, precio, cantidad, iva, caducidad;
+	 
+	 @Before
+	 public void setUp(){
+		 bean = mock(BeanUsuario.class);
+		 iD = "0";
+		 descripcion="nada";
+		 precio="0";
+		 cantidad = "0";
+		 iva = "0";
+		 caducidad="0000-00-00";
+		 
+	 }
+	 
+	 //Test para el iD del producto
+	 @Test
+	 public void setiDTest(){
+		 bean.setiD("10");
+		 verify(bean).setiD("10");
+	 }
+	 	
+	 @Test
+	 public void getiDTest(){
+		when(bean.getiD()).thenReturn("14");
+		 iD = bean.getiD();
+		 assertEquals(iD,"14");
+		 
+	 }
+	 
+	 //Test para la descripcion del producto
+	 @Test
+	 public void setDescripcionTest(){
+		 bean.setDescripcion("Paracetamol");
+		 verify(bean).setDescripcion("Paracetamol");
+	 }
+	 	
+	 @Test
+	 public void getDescripcionTest(){
+		when(bean.getDescripcion()).thenReturn("Paracetamol");
+		descripcion = bean.getDescripcion();
+		assertEquals(descripcion, "Paracetamol");
+		 
+	 }
+	 
+	 //Test para el precio del producto
+	 @Test
+	 public void setPrecioTest(){
+		 bean.setPrecio("10");
+		 verify(bean).setPrecio("10");
+	 }
+	 	
+	 @Test
+	 public void getPrecioTest(){
+		when(bean.getDescripcion()).thenReturn("Paracetamol");
+		descripcion = bean.getDescripcion();
+		assertEquals(descripcion, "Paracetamol");
+		 
+	 }
+
+}

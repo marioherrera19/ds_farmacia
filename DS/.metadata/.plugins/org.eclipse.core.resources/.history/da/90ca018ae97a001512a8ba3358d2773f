@@ -1,0 +1,38 @@
+package modelo;
+
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import static org.easymock.EasyMock.*;
+import org.junit.*;
+import static org.mockito.Mockito.*;
+
+public class ConexionTest {
+	
+	Conexion conexion;
+	public String connectionURL;
+	
+	@Before
+	public void setUp(){
+		conexion = mock(Conexion.class);
+		connectionURL = "jdbc:sqlserver://localhost;databaseName=FarmaciaWeb;user=sa;password=sa;";
+		
+	}
+	
+	
+	public void getConexionTest() throws SQLException{
+	
+		
+	}
+	
+	public void cerrarConexionTest(){
+		
+		conexion.cerrarConexion();
+		verify(conexion).cerrarConexion();
+		
+	}
+	
+
+}

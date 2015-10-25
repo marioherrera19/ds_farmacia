@@ -1,0 +1,22 @@
+package modelo;
+
+import java.sql.Statement;
+
+import org.junit.Before;
+
+public class UsuarioTest {
+	
+	Usuario usuario;
+	Conexion con;
+	
+	@Before
+	public void setUp(){
+		
+	}
+	
+	public void agregarProductoTest(){
+		 Statement st;
+		 st = con.createStatement();
+	}
+
+}

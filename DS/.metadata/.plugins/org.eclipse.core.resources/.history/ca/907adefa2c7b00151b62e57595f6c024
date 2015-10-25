@@ -1,0 +1,34 @@
+package modelo;
+
+
+import org.junit.Before;
+import org.junit.Test;
+
+import static org.mockito.Mockito.mock;
+
+import static org.mockito.Mockito.*;
+
+public class ConexionTest{
+	
+	Conexion conexion;
+	public String connectionURL;
+	
+	@Before
+	public void setUp(){
+		conexion = mock(Conexion.class);
+		
+	}
+	
+	@Test
+	public void getConexion(){
+		conexion.getConexion();
+		verify(conexion).getConexion();
+	}
+	
+	@Test
+	public void cerrarConexionTest(){
+		conexion.cerrarConexion();
+		verify(conexion).cerrarConexion();
+		
+	}
+}

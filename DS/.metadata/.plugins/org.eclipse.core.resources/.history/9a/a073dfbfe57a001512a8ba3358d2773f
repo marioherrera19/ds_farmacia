@@ -1,0 +1,52 @@
+package modelo;
+
+import org.junit.Before;
+import org.junit.Test;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+ 
+import static org.easymock.EasyMock.expect;
+import static org.powermock.api.easymock.PowerMock.*;
+ 
+import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;
+
+import java.sql.Connection;
+
+import static org.mockito.Mockito.*;
+
+public class ConexionTest {
+	
+	Conexion conexion;
+	private Connection con;
+	public String connectionURL;
+	
+	@Before
+	public void setUp(){
+		conexion = mock(Conexion.class);
+		connectionURL = "jdbc:sqlserver://localhost;databaseName=FarmaciaWeb;user=sa;password=sa;";
+		con = null;
+	}
+	
+	
+	public void getConexionTest() throws SQLException{
+		
+		when(conexion.getConexion()).thenReturn(DriverManager.getConnection(connectionURL));
+		con = conexion.getConexion();
+		
+		assertEquals(con, "DriverManager.getConnection(connectionURL)")
+		
+	}
+	
+
+}

@@ -1,0 +1,38 @@
+package controlador;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Before;
+import org.junit.Test;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
+
+public class BeanUsuarioTest {
+	
+	 BeanUsuario bean;
+	 private String iD;
+	 
+	 @Before
+	 public void setUp(){
+		 bean = mock(BeanUsuario.class);
+		 iD = "0";
+		 
+	 }
+	 
+	 //Test para el nombre
+	 @Test
+	 public void setiD(){
+		 bean.setiD("9");
+		 verify(bean).setiD("10");
+	 }
+	 	
+	 @Test
+	 public void getiD(){
+		when(bean.getiD()).thenReturn("14");
+		 iD = bean.getiD();
+		 assertEquals(iD,"14");
+		 
+	 }
+
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="test" project="FarmaciaJava" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="controlador.BeanUsuarioTest" time="0.037">
+    <testcase name="setiD" classname="controlador.BeanUsuarioTest" time="0.029"/>
+    <testcase name="getiD" classname="controlador.BeanUsuarioTest" time="0.008"/>
+  </testsuite>
+  <testsuite name="modelo.ConexionTest" time="0.006">
+    <testcase name="cerrarConexionTest" classname="modelo.ConexionTest" time="0.005"/>
+    <testcase name="getConexion" classname="modelo.ConexionTest" time="0.001"/>
+  </testsuite>
+</testrun>

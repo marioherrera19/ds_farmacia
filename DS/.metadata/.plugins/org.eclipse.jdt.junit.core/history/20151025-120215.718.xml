@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ConexionTest" project="FarmaciaJava" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="modelo.ConexionTest" time="0.135">
+    <testcase name="getConexion" classname="modelo.ConexionTest" time="0.135"/>
+    <testcase name="cerrarConexionTest" classname="modelo.ConexionTest" time="0.0"/>
+  </testsuite>
+</testrun>
