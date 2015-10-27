@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;StyleLookProduct.css&apos; to &apos;FarmaciaJava/src/main/webapp&apos;&#x0D;&#x0A;- Original project: &apos;FarmaciaJava&apos;&#x0D;&#x0A;- Destination element: &apos;FarmaciaJava/src/main/webapp&apos;&#x0D;&#x0A;- Original element: &apos;StyleLookProduct.css&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="/src\/main\/webapp" element1="src/main/webapp/WEB-INF/StyleLookProduct.css" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1445905927298" units="0" version="1.0"/>
+</session>

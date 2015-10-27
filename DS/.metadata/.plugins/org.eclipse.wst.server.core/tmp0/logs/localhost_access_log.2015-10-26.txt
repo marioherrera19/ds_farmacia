@@ -1,0 +1,10 @@
+127.0.0.1 - - [26/Oct/2015:18:35:10 -0600] "GET / HTTP/1.1" 404 961
+0:0:0:0:0:0:0:1 - - [26/Oct/2015:18:38:44 -0600] "GET /FarmaciaJava/LookProduct.jsp HTTP/1.1" 404 1017
+0:0:0:0:0:0:0:1 - - [26/Oct/2015:18:38:44 -0600] "GET /favicon.ico HTTP/1.1" 404 983
+0:0:0:0:0:0:0:1 - - [26/Oct/2015:18:38:59 -0600] "GET /FarmaciaJava/lookProduct.jsp HTTP/1.1" 200 706
+0:0:0:0:0:0:0:1 - - [26/Oct/2015:18:38:59 -0600] "GET /FarmaciaJava/StyleLookProduct.css HTTP/1.1" 200 127
+0:0:0:0:0:0:0:1 - - [26/Oct/2015:18:39:06 -0600] "GET /FarmaciaJava/ServletConsulta?descripcion=Paracetamol HTTP/1.1" 200 926
+0:0:0:0:0:0:0:1 - - [26/Oct/2015:18:40:28 -0600] "GET /FarmaciaJava/ HTTP/1.1" 404 987
+0:0:0:0:0:0:0:1 - - [26/Oct/2015:18:40:37 -0600] "GET /FarmaciaJava/addProduct.jsp HTTP/1.1" 200 1878
+0:0:0:0:0:0:0:1 - - [26/Oct/2015:18:40:37 -0600] "GET /FarmaciaJava/StyleProduct.css HTTP/1.1" 200 1537
+0:0:0:0:0:0:0:1 - - [26/Oct/2015:18:41:02 -0600] "POST /FarmaciaJava/ServletRegistro HTTP/1.1" 200 362

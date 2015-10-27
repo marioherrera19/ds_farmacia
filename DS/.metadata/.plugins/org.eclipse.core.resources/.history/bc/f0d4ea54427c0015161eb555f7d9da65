@@ -1,0 +1,24 @@
+@CHARSET "ISO-8859-1";
+
+body {
+   background: #BFD7C1; /* light green */
+   color: #262626;
+   font-family: Arial, san-serif;
+}
+
+input:required, textarea:required {  
+   box-shadow: none;
+   -moz-box-shadow: none;  
+   -webkit-box-shadow: none;  
+   -o-box-shadow: none;  
+}
+
+#contact-form textarea {  
+   height: 150px;  
+}  
+
+#contact-form input:focus,  
+#contact-form select:focus,  
+#contact-form textarea:focus {  
+   background-color: #E5E6E7;
+}  

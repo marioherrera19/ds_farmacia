@@ -1,0 +1,7 @@
+@CHARSET "ISO-8859-1";
+
+body {
+   background: #BFD7C1; /* light green */
+   color: #262626;
+   font-family: Arial, san-serif;
+}
