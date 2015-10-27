@@ -14,6 +14,7 @@ public class Producto {
 	  boolean agregado=false;
 	  try {
 	   Conexion c = new Conexion();
+	   c.crearConexion();
 	   Connection con=c.getConexion();
 	   if(con!=null){
 	    Statement st;
