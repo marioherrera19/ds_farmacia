@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    
+  <title>Interfaz De Cobro </title>
+    
+   <link rel="stylesheet" href="CSS/IntCobro.css"></link>   
+    
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+</head>
+    
+    
+<body>
+<div class="contenedor-fluid">
+    
+    
+    
+    
+    
+<div class="row"> <!-- row Encabezado-->
+    
+    <!-- -------------------Encabezado farmacias vallarta, User, Date----------------------------------------------------- -->
+    
+        <div class="panel panel-info">
+      <div class="panel-heading"  style="max-height: 10;"><H2>Farmacias Vallarta</H2></div>
+      <div class="panel-body">Usuario:<input class="form-control" type="text" placeholder="PONER AQUI NOMBRE DE USUARIO Y PONER FECHA" readonly> </div>
+    </div>
+</div><!--row Encabezado-->
+    
+    
+    
+
+<div class="row"> <!-- row Contenido-->
+    
+   <div class="Botones"> 
+        <button type="button" class="btn btn-primary active">Active Primary</button>
+        
+        </div>
+    
+
+    
+    
+<div class="container">
+      
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>ID</th>
+        <th>Piezas</th>
+        <th>Unitario</th>
+        <th>Costo</th>
+        <th>Cancelar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mona China</td>
+        <td>24544711</td>
+        <td>2</td>
+        <td>800</td>
+        <td>1600</td>
+        <td> <button type="button" class="btn btn-primary btn-xs">X</button></td>
+      </tr>
+      <tr>
+        <td>Sandia</td>
+        <td>2444711</td>
+        <td>3</td>
+        <td>50</td>
+        <td>150</td>
+        <td> <button type="button" class="btn btn-primary btn-xs">X</button></td>
+      </tr>
+      <tr>
+        <td>Gelatina</td>
+        <td>88844711</td>
+        <td>1</td>
+        <td>800</td>
+        <td>800</td>
+        <td> <button type="button" class="btn btn-primary btn-xs">X</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>       
+    
+    
+    <!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn-success">Cobrar</button> <!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn-danger">Cancelar</button>
+<input class="form-control" type="text" placeholder="Subtotal $ : xxxxxxxxxx " readonly>
+<input class="form-control" type="text" placeholder="Iva $ : xxxxxxxxxxxx" readonly>
+<input class="form-control" type="text" placeholder="Total $ : xxxxxxxxxxxx" readonly>
+    
+</div><!--row Contenido-->
+    
+    
+    
+    
+    
+</div><!--container-->
+</body>
+</html>
